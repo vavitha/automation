@@ -38,6 +38,8 @@ public class Landingpage {
           userName.sendKeys(name);
           passWord.sendKeys(pswd);
           login.click();
+          driver.quit();
+          
       }
      
 
@@ -198,6 +200,7 @@ public class Landingpage {
           check1.click();
           check2.click();
           order.click();
+          driver.quit();
           
       }
 

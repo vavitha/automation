@@ -3,14 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumFrameworkDesign.Signuppom">
+      <class name="SeleniumFrameworkDesign.orderpom">
         <methods>
-          <include name="demo5"/>
-          <include name="demo3"/>
-          <include name="demo4"/>
-          <include name="demo1"/>
+          <include name="orderaddress"/>
+          <include name="orderusername"/>
+          <include name="ordercount"/>
+          <include name="ordergmail"/>
+          <include name="orderphonenumber"/>
+          <include name="ordervalid"/>
+          <include name="orderzip"/>
+          <include name="orderpassword"/>
+          <include name="browserSelection"/>
         </methods>
-      </class> <!-- SeleniumFrameworkDesign.Signuppom -->
+      </class> <!-- SeleniumFrameworkDesign.orderpom -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

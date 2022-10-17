@@ -24,43 +24,43 @@ public class SignUpLanding {
 
 
 
-@FindBy(linkText="Sign up")
-  WebElement signUp;
+   @FindBy(linkText="Sign up")
+   WebElement signUp;
   
-@FindBy(id="myName")
-WebElement FirstName;
+   @FindBy(id="myName")
+   WebElement FirstName;
 
-@FindBy(xpath="//input[@placeholder='Last Name']")
-WebElement LastName;
+   @FindBy(xpath="//input[@placeholder='Last Name']")
+   WebElement LastName;
 
-@FindBy(xpath="//input[@placeholder='Enter Email']")
-WebElement Email;
+   @FindBy(xpath="//input[@placeholder='Enter Email']")
+   WebElement Email;
 
-@FindBy(xpath="//input[@placeholder='Password']")
-WebElement passwd;
+   @FindBy(xpath="//input[@placeholder='Password']")
+   WebElement passwd;
 
-@FindBy(xpath="//input[@type='date']")
-WebElement dateofbirth;
+   @FindBy(xpath="//input[@type='date']")
+   WebElement dateofbirth;
 
-@FindBy(xpath="//div[@class='col-md-2']//input[@name='gender']")
-WebElement male;
+   @FindBy(xpath="//div[@class='col-md-2']//input[@name='gender']")
+   WebElement male;
 
-@FindBy(xpath="//div[@class='col-md-3']//input[@name='gender']")
-WebElement female;
+   @FindBy(xpath="//div[@class='col-md-3']//input[@name='gender']")
+   WebElement female;
 
-@FindBy(xpath="//input[@placeholder='91XXXXXXXXXX']")
-WebElement Mobile;
-
-
-@FindBy(xpath="//textarea[@placeholder='Short Bio']")
-WebElement Bio;
-
-@FindBy(xpath="//button[@type='submit']")
-WebElement register;
+   @FindBy(xpath="//input[@placeholder='91XXXXXXXXXX']")
+   WebElement Mobile;
 
 
-@FindBy(linkText="Sign In")
-WebElement Sign_In;
+   @FindBy(xpath="//textarea[@placeholder='Short Bio']")
+   WebElement Bio;
+
+   @FindBy(xpath="//button[@type='submit']")
+   WebElement register;
+
+
+   @FindBy(linkText="Sign In")
+   WebElement Sign_In;
 
 
 
@@ -93,6 +93,7 @@ public void SignUpApp(String Fname,String Lname,String eml,String pssd,String do
     
     Alert al = driver.switchTo().alert();
     al.accept();
+    driver.quit();
   
     
    
